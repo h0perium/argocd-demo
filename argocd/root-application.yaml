@@ -1,22 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-
 metadata:
-  name: nginx-demo
+  name: root-app
   namespace: argocd
-
 spec:
   project: default
 
   source:
     repoURL: https://github.com/h0perium/argocd-demo.git
-    path: k8s
-    targetRevision: HEAD
+    targetRevision: main
+    path: argocd/apps
+
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo
+    namespace: argocd
+
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-      enabled: true
