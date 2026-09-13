@@ -9,11 +9,11 @@ spec:
   source:
     repoURL: https://github.com/h0perium/argocd-demo.git
     targetRevision: main
-    path: k8s
+    path: k8s/nginx/overlays/product
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: demo
+    namespace: product
 
   syncPolicy:
     automated:
