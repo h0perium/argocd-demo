@@ -7,7 +7,7 @@ namespace: test
 
 images:
   - name: nginx
-    newTag: 1.26
+    newTag: "1.26"
 
 replicas:
   - name: nginx-demo
