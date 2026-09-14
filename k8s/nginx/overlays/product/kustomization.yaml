@@ -7,8 +7,8 @@ namespace: product
 
 images:
   - name: nginx
-    newTag: "1.25"
+    newTag: "1.26"
 
 replicas:
   - name: nginx-demo
-    count: 3
+    count: 5
