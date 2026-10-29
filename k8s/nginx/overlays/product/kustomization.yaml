@@ -8,4 +8,4 @@ images:
   newTag: 1.31.5
 replicas:
 - name: nginx-demo
-  count: 5
+  count: 1
